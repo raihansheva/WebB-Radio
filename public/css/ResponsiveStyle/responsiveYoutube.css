@@ -1,0 +1,1999 @@
+
+@media (min-width: 1920px) {
+    .area-thumbnail-youtube {
+        margin: 30px 32px 0px 32px;
+    }
+
+    .area-image-thumbnail {
+        width: 100%;
+        height: 400px;
+        background-color: gainsboro;
+        border-radius: 15px;
+    }
+
+    /* page youtube 2 */
+    .area-video-youtube {
+        margin: 0px 128px 0px 128px;
+    }
+
+    .thumbnail {
+        height: 140px;
+    }
+
+    .title-thumbnail {
+        font-size: 44px;
+    }
+
+    .text-choose {
+        font-size: 26px;
+    }
+
+    .dropdown-btn-search {
+        width: 220px;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .dropdown-item {
+        font-size: 18px;
+    }
+
+    .video--wrapper {
+        width: calc(20% - 20px);
+    }
+
+    .video--details__avatar img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .video--details__title {
+        font-size: 14px;
+    }
+
+    .video--details__channelTitle {
+        font-size: 18px;
+    }
+
+    .video--details__meta h3 {
+        margin: 4px 0;
+        font-family: "Poppins";
+        font-size: 20px;
+        color: white;
+    }
+
+    .video--details__meta-data {
+        display: flex;
+        gap: 10px;
+        font-size: 1.1rem;
+        color: #ffffff;
+        font-family: "Poppins";
+        font-weight: 200;
+    }
+
+    .modal-content {
+        width: 50%; /* Ukuran modal lebih kecil untuk laptop */
+    }
+    iframe {
+        height: 300px; /* Tinggi iframe disesuaikan */
+    }
+
+    /* -------------------- */
+
+    /* page youtube 3 */
+
+    .page-youtube-3{
+        height: fit-content;
+    }
+
+    .line-VNS {
+        width: 100%;
+        border: 1px white solid;
+        margin: 100px 0px;
+    }
+
+    .area-event-news-streaming {
+        margin: 0px 128px 90px 128px;
+    }
+
+    .area-content-VNS {
+        gap: 20px;
+    }
+
+    /* content kiri */
+
+    .area-content-VNS-kiri {
+        width: 55%;
+    }
+    
+    .title-event {
+        font-size: 44px;
+    }
+    
+    .content-kiri-event {
+        gap: 15px;
+        height: 924px;
+        /* height: auto; */
+    }
+
+    .area-countdown {
+        height: 105px;
+    }
+
+    .timer {
+        font-size: 34px;
+    }
+
+    .title-timer {
+        font-size: 28px;
+    }
+
+    .date-month {
+        font-size: 34px;
+    }
+
+    .year {
+        font-size: 22px;
+    }
+
+    .area-event-bottom {
+        height: 30%;
+        gap: 15px;
+    }
+
+    .area-days-date-right {
+        height: 65px;
+    }
+
+    .date-month-right {
+        font-size: 28px;
+    }
+
+    .year-right {
+        font-size: 18px;
+    }
+    /* --------------- */
+    /* pop up event */
+    .popup-content {
+        width: 450px;
+        height: 200px;
+        padding: 25px;
+    }
+
+    .desk-program {
+        font-size: 16px;
+    }
+
+    .jam-program {
+        font-size: 14px;
+    }
+
+    .title-box-program {
+        font-size: 28px;
+    }
+
+    .link-program {
+        font-size: 20px;
+    }
+
+    /* content kanan */
+    .area-content-VNS-kanan {
+        width: 44%;
+        height: 980px;
+        gap: 10px;
+    }
+
+    /* area news */
+
+    /* .content-news {
+    height: 85%;
+    border: 1px blue solid;
+} */
+
+    .title-news {
+        font-size: 44px;
+    }
+
+    .box-news {
+        height: 95px;
+        padding: 8px;
+    }
+
+    .area-image {
+        height: 100%;
+    }
+
+    .tag-top-info {
+        font-size: 22px;
+    }
+
+    .desk-top-info {
+        font-size: 20px;
+    }
+
+    .date-top-info {
+        font-size: 18px;
+    }
+    /* ------------ */
+    /* area content stream */
+    .area-content-streaming {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .title-streaming {
+        font-size: 44px;
+    }
+
+    .box-streaming {
+        height: 240px;
+    }
+
+    .btn-play-streaming {
+        width: 65px;
+        height: 65px;
+    }
+
+    .btn-play-streaming span {
+        font-size: 32px;
+    }
+
+    /* ------------------- */
+    /* --------------- */
+
+    /* -------------------- */
+}
+
+@media (max-width: 1440px) {
+    /* Gaya untuk desktop besar */
+}
+
+@media (max-width: 1366px) {
+    /* Gaya untuk laptop widescreen */
+}
+
+@media (max-width: 1280px) {
+    /* Gaya untuk laptop standar */
+}
+
+@media (max-width: 1024px) {
+    .area-thumbnail-youtube {
+        margin: 30px 32px 0px 32px;
+    }
+
+    /* page youtube 2 */
+    .area-video-youtube {
+        margin: 0px 32px 0px 32px;
+    }
+
+    .thumbnail {
+        height: 140px;
+    }
+
+    .text-choose {
+        font-size: 18px;
+    }
+
+    .dropdown-btn-search {
+        width: 180px;
+        padding: 5px;
+    }
+
+    .dropdown-item {
+        font-size: 16px;
+    }
+
+    .video--details__avatar img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .video--details__title {
+        font-size: 14px;
+    }
+
+    .video--details__channelTitle {
+        font-size: 14px;
+    }
+
+    .video--details__meta h3 {
+        margin: 4px 0;
+        font-family: "Poppins";
+        font-size: 15px;
+        color: white;
+    }
+
+    .video--details__meta-data {
+        display: flex;
+        gap: 10px;
+        font-size: 0.7rem;
+        color: #ffffff;
+        font-family: "Poppins";
+        font-weight: 200;
+    }
+
+    .modal-content {
+        width: 50%; /* Ukuran modal lebih kecil untuk laptop */
+    }
+    iframe {
+        height: 300px; /* Tinggi iframe disesuaikan */
+    }
+
+    /* -------------------- */
+
+    /* page youtube 3 */
+
+    .line-VNS {
+        width: 100%;
+        border: 1px white solid;
+        margin: 100px 0px;
+    }
+
+    .area-event-news-streaming {
+        margin: 0px 32px 30px 32px;
+    }
+
+    .area-content-VNS {
+        height: fit-content;
+        gap: 10px;
+        /* border: 1px red solid; */
+    }
+
+    /* content kiri */
+
+    .area-content-VNS-kiri {
+        width: 55%;
+    }
+
+    .title-event {
+        font-size: 36px;
+    }
+
+    .content-kiri-event {
+        gap: 10px;
+        height: 555px;
+    }
+
+    .area-countdown {
+        height: 65px;
+    }
+
+    .timer {
+        font-size: 28px;
+    }
+
+    .title-timer {
+        font-size: 16px;
+    }
+
+    .date-month {
+        font-size: 22px;
+    }
+
+    .year {
+        font-size: 22px;
+    }
+
+    .area-event-bottom {
+        gap: 10px;
+    }
+
+    .area-days-date-right {
+        height: 35px;
+    }
+
+    .date-month-right {
+        font-size: 18px;
+    }
+
+    .year-right {
+        font-size: 18px;
+    }
+
+    /* --------------- */
+    /* pop up event */
+    .popup-content-event {
+        width: 450px;
+        height: 200px;
+        padding: 25px;
+    }
+
+    .desk-event {
+        font-size: 16px;
+    }
+
+    .jam-event {
+        font-size: 14px;
+    }
+
+    .title-box-event {
+        font-size: 28px;
+    }
+
+    .link-event {
+        font-size: 16px;
+    }
+    /* content kanan */
+    .area-content-VNS-kanan {
+        width: 44%;
+        height: 602px;
+        gap: 10px;
+    }
+
+    /* area news */
+
+    /* .content-news {
+        height: 85%;
+        border: 1px blue solid;
+    } */
+
+    .title-news {
+        font-size: 34px;
+    }
+
+    .box-news {
+        height: 55px;
+        padding: 8px;
+    }
+
+    .area-image {
+        height: 100%;
+    }
+
+    .tag-top-info {
+        font-size: 14px;
+    }
+
+    .desk-top-info {
+        font-size: 12px;
+    }
+
+    .date-top-info {
+        font-size: 10px;
+    }
+    /* ------------ */
+
+    /* area content stream */
+
+    .area-content-streaming {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .title-streaming {
+        font-size: 30px;
+    }
+
+    .box-streaming {
+        height: 108px;
+    }
+
+    .btn-play-streaming {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-play-streaming span {
+        font-size: 26px;
+    }
+    /* ------------------- */
+    /* --------------- */
+
+    /* -------------------- */
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .area-thumbnail-youtube {
+        margin: 20px 20px 0px 20px;
+    }
+
+    .area-image-thumbnail {
+        height: 250px;
+    }
+
+    .area-title-thumbnail {
+        margin: 15px 0px;
+    }
+
+    .title-thumbnail {
+        font-size: 36px;
+    }
+
+    /* page youtube 2 */
+    .area-video-youtube {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .text-choose {
+        font-size: 18px;
+    }
+
+    .dropdown-btn-search {
+        width: 150px;
+        padding: 5px;
+    }
+
+    .dropdown-item {
+        font-size: 16px;
+    }
+
+    .video--wrapper {
+        width: calc(33.33% - 15px);
+    }
+
+    .video--details__avatar img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .video--details__title {
+        font-size: 14px;
+    }
+
+    .video--details__channelTitle {
+        font-size: 14px;
+    }
+
+    .video--details__meta h3 {
+        margin: 4px 0;
+        font-family: "Poppins";
+        font-size: 15px;
+        color: white;
+    }
+
+    .video--details__meta-data {
+        display: flex;
+        gap: 10px;
+        font-size: 0.7rem;
+        color: #ffffff;
+        font-family: "Poppins";
+        font-weight: 200;
+    }
+
+    .video--thumbnail__overlays {
+        font-size: 10px;
+    }
+
+    .modal-content {
+        width: 60%; /* Diperkecil lagi untuk layar tablet */
+    }
+    iframe {
+        height: 260px; /* Tinggi iframe lebih rendah */
+    }
+
+    /* -------------------- */
+
+    /* page youtube 3 */
+
+    .page-youtube-3 {
+        height: 700px;
+    }
+
+    .line-VNS {
+        width: 100%;
+        border: 1px white solid;
+        margin: 10px 0px 80px 0px;
+    }
+
+    .area-event-news-streaming {
+        margin: 15px 20px 30px 20px;
+    }
+
+    .area-content-VNS {
+        gap: 10px;
+    }
+
+    /* content kiri */
+
+    .area-content-VNS-kiri {
+        width: 55%;
+    }
+
+    .title-event {
+        font-size: 30px;
+    }
+
+    .content-kiri-event {
+        gap: 10px;
+        height: 555px;
+    }
+
+    .area-event-mid {
+        height: 50%;
+    }
+
+    .area-countdown {
+        height: 65px;
+        padding: 10px 15px;
+    }
+
+    .countdown {
+        width: 60%;
+        gap: 8px;
+    }
+
+    .area-days-date {
+        width: 40%;
+    }
+
+    .timer {
+        font-size: 26px;
+    }
+
+    .title-timer {
+        font-size: 14px;
+    }
+
+    .date-month {
+        font-size: 20px;
+    }
+
+    .year {
+        font-size: 20px;
+    }
+    /* ---------------- */
+    /* pop up event */
+    .popup-content-event {
+        width: 400px;
+        height: 180px;
+        padding: 25px;
+    }
+
+    .area-info-event {
+        gap: 6px;
+    }
+
+    .desk-event {
+        font-size: 14px;
+    }
+
+    .jam-event {
+        font-size: 12px;
+    }
+
+    .title-box-event {
+        font-size: 24px;
+    }
+
+    .link-event {
+        font-size: 14px;
+    }
+    /* -------------- */
+    /* box- bawah */
+    .area-event-bottom {
+        gap: 10px;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .box-event {
+        width: 100%;
+        height: 50%;
+    }
+
+    .area-days-date-right {
+        height: 30px;
+    }
+
+    .date-month-right {
+        font-size: 18px;
+    }
+
+    .year-right {
+        font-size: 16px;
+    }
+    /* ------------- */
+
+    /* --------------- */
+
+    /* content kanan */
+    .area-content-VNS-kanan {
+        width: 45%;
+        height: 595px;
+        gap: 6px;
+        /* border: 1px red solid; */
+    }
+
+    /* area news */
+
+    .content-news {
+        height: 100%;
+        /* border: 1px blue solid; */
+    }
+
+    .title-news {
+        font-size: 30px;
+    }
+
+    .box-news {
+        height: auto;
+        padding: 8px;
+    }
+
+    .area-image {
+        width: 40%;
+        height: 100%;
+    }
+
+    .tag-top-info {
+        font-size: 14px;
+    }
+
+    .desk-top-info {
+        font-size: 12px;
+    }
+
+    .date-top-info {
+        font-size: 10px;
+    }
+    /* ------------ */
+
+    /* area content stream */
+
+    .area-content-streaming {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .title-streaming {
+        font-size: 30px;
+    }
+
+    .box-streaming {
+        height: 108px;
+    }
+
+    .btn-play-streaming {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-play-streaming span {
+        font-size: 26px;
+    }
+    /* ------------------- */
+    /* --------------- */
+
+    /* -------------------- */
+}
+
+@media (max-width: 600px) {
+    /* Gaya untuk tablet kecil atau phablet */
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .area-thumbnail-youtube {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .area-image-thumbnail {
+        /*width: 100%;
+        */
+        height: 200px;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .banner-youtube {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .area-title-thumbnail {
+        margin: 10px 0px;
+    }
+
+    .title-thumbnail {
+        font-size: 34px;
+    }
+
+    /* page youtube 2 */
+    .area-video-youtube {
+        margin: 20px 8px 0px 8px;
+    }
+
+    .text-choose {
+        font-size: 14px;
+    }
+
+    .dropdown-btn-search {
+        width: 100px;
+        /* padding: 5px; */
+        font-size: 12px;
+    }
+
+    .dropdown-item {
+        font-size: 12px;
+    }
+
+    .video--wrapper {
+        width: calc(50% - 10px);
+    }
+
+    .video--details__avatar img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .video--details__title {
+        font-size: 12px;
+    }
+
+    .video--details__channelTitle {
+        font-size: 12px;
+    }
+
+    .video--details__meta h3 {
+        margin: 0px 0px;
+        font-family: "Poppins";
+        font-size: 13px;
+        color: white;
+    }
+
+    .video--details__meta-data {
+        display: flex;
+        gap: 10px;
+        font-size: 0.5rem;
+        color: #ffffff;
+        font-family: "Poppins";
+        font-weight: 200;
+    }
+
+    .video--thumbnail__overlays {
+        font-size: 8px;
+    }
+
+    .modal-content {
+        width: 55%; /* Diperkecil lagi untuk layar mobile */
+    }
+    iframe {
+        height: 120px; /* Tinggi iframe lebih rendah */
+    }
+    /* -------------------- */
+
+    /* page youtube 3 */
+
+    .page-youtube-3 {
+        height: auto;
+    }
+
+    .line-VNS {
+        width: 100%;
+        border: 1px white solid;
+    }
+
+    .area-event-news-streaming {
+        margin: 30px 8px 30px 8px;
+    }
+
+    .area-content-VNS {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    /* content kiri */
+
+    .area-content-VNS-kiri {
+        width: 100%;
+    }
+
+    .title-event {
+        font-size: 30px;
+    }
+
+    .content-kiri-event {
+        gap: 10px;
+        height: 555px;
+    }
+
+    .area-event-mid {
+        height: 50%;
+    }
+
+    .area-countdown {
+        height: 55px;
+        padding: 10px 15px;
+    }
+
+    .countdown {
+        width: 60%;
+        gap: 8px;
+    }
+
+    .area-days-date {
+        width: 40%;
+    }
+
+    .timer {
+        font-size: 24px;
+    }
+
+    .title-timer {
+        font-size: 12px;
+    }
+
+    .date-month {
+        font-size: 20px;
+    }
+
+    .year {
+        font-size: 20px;
+    }
+    /* ---------------- */
+    /* pop up event */
+    .popup-content-event {
+        width: 200px;
+        height: 110px;
+        padding: 15px;
+    }
+
+    .area-info-event {
+        gap: 3px;
+    }
+
+    .desk-event {
+        font-size: 8px;
+    }
+
+    .jam-event {
+        font-size: 10px;
+    }
+
+    .title-box-event {
+        font-size: 18px;
+    }
+
+    .link-event {
+        font-size: 10px;
+    }
+    /* -------------- */
+    /* box- bawah */
+    .area-event-bottom {
+        gap: 10px;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .box-event {
+        width: 100%;
+        height: 50%;
+    }
+
+    .area-days-date-right {
+        height: 30px;
+    }
+
+    .date-month-right {
+        font-size: 18px;
+    }
+
+    .year-right {
+        font-size: 16px;
+    }
+    /* ------------- */
+
+    /* --------------- */
+
+    /* content kanan */
+    .area-content-VNS-kanan {
+        width: 100%;
+        /* gap: 6px; */
+        /* border: 1px red solid; */
+    }
+
+    /* area news */
+
+    .content-news {
+        height: 80%;
+        /* border: 1px blue solid; */
+    }
+
+    .title-news {
+        font-size: 28px;
+    }
+
+    .box-news {
+        height: auto;
+        padding: 8px;
+    }
+
+    .area-image {
+        width: 40%;
+        height: 100%;
+    }
+
+    .tag-top-info {
+        font-size: 14px;
+    }
+
+    .desk-top-info {
+        font-size: 12px;
+    }
+
+    .date-top-info {
+        font-size: 10px;
+    }
+    /* ------------ */
+
+    /* area content stream */
+
+    .content-streaming {
+        height: 85px;
+        /* border: 1px  red solid; */
+    }
+
+    .title-streaming {
+        padding-top: 10px;
+        font-size: 28px;
+    }
+
+    .box-streaming {
+        height: 100%;
+    }
+
+    .btn-play-streaming {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn-play-streaming span {
+        font-size: 22px;
+    }
+    /* ------------------- */
+    /* --------------- */
+
+    /* -------------------- */
+}
+
+@media (max-width: 375px) {
+    .area-thumbnail-youtube {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .area-image-thumbnail {
+        /*width: 100%;
+        */
+        height: 160px;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .banner-youtube {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .area-title-thumbnail {
+        margin: 10px 0px;
+    }
+
+    .title-thumbnail {
+        font-size: 30px;
+    }
+
+    /* page youtube 2 */
+    .area-video-youtube {
+        margin: 20px 8px 0px 8px;
+    }
+
+    .text-choose {
+        font-size: 12px;
+    }
+
+    .dropdown-btn-search {
+        width: 100px;
+        /* padding: 5px; */
+        font-size: 10px;
+    }
+
+    .dropdown-item {
+        font-size: 10px;
+    }
+
+    .video {
+        display: flex;
+    }
+
+    .video--wrapper {
+        width: 100%;
+    }
+
+    .video--details__avatar img {
+        width: 25px;
+        height: 25px;
+        display: none;
+    }
+
+    .video--details {
+        padding: 0px 10px;
+        width: 50%;
+    }
+
+    .video--details__title {
+        font-size: 12px;
+    }
+
+    .video--details__channelTitle {
+        font-size: 12px;
+    }
+
+    .video--details__meta h3 {
+        margin: 0px 0px;
+        font-family: "Poppins";
+        font-size: 13px;
+        color: white;
+    }
+
+    .video--details__meta-data {
+        display: flex;
+        gap: 10px;
+        font-size: 0.5rem;
+        color: #ffffff;
+        font-family: "Poppins";
+        font-weight: 200;
+    }
+
+    .video--thumbnail {
+        height: fit-content;
+        width: 50%;
+    }
+
+    .video--thumbnail img {
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    .video--thumbnail__overlays {
+        font-size: 8px;
+        margin: 5px;
+    }
+
+    .modal-content {
+        width: 55%; /* Diperkecil lagi untuk layar mobile */
+    }
+    iframe {
+        height: 120px; /* Tinggi iframe lebih rendah */
+    }
+    /* -------------------- */
+
+    /* page youtube 3 */
+
+    .page-youtube-3 {
+        height: auto;
+    }
+
+    .line-VNS {
+        width: 100%;
+        border: 1px white solid;
+    }
+
+    .area-event-news-streaming {
+        margin: 25px 8px 25px 8px;
+    }
+
+    .area-content-VNS {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    /* content kiri */
+
+    .area-content-VNS-kiri {
+        width: 100%;
+    }
+
+    .title-event {
+        font-size: 26px;
+    }
+
+    .content-kiri-event {
+        gap: 10px;
+        height: 555px;
+    }
+
+    .area-event-mid {
+        height: 50%;
+    }
+
+    .area-countdown {
+        height: 55px;
+        padding: 10px 15px;
+        padding: 10px;
+    }
+
+    .countdown {
+        width: 60%;
+        gap: 5px;
+    }
+
+    .area-days-date {
+        width: 40%;
+    }
+
+    .timer {
+        font-size: 22px;
+    }
+
+    .title-timer {
+        font-size: 10px;
+    }
+
+    .date-month {
+        font-size: 20px;
+    }
+
+    .year {
+        font-size: 20px;
+    }
+    /* ---------------- */
+    /* pop up event */
+    .popup-content-event {
+        width: 200px;
+        height: 110px;
+        padding: 15px;
+    }
+
+    .area-info-event {
+        gap: 3px;
+    }
+
+    .desk-event {
+        font-size: 8px;
+    }
+
+    .jam-event {
+        font-size: 10px;
+    }
+
+    .title-box-event {
+        font-size: 18px;
+    }
+
+    .link-event {
+        font-size: 10px;
+    }
+    /* -------------- */
+    /* box- bawah */
+    .area-event-bottom {
+        gap: 10px;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .box-event {
+        width: 100%;
+        height: 50%;
+    }
+
+    .area-days-date-right {
+        height: 25px;
+        padding: 10px;
+    }
+
+    .date-month-right {
+        font-size: 16px;
+    }
+
+    .year-right {
+        font-size: 16px;
+    }
+    /* ------------- */
+
+    /* --------------- */
+
+    /* content kanan */
+    .area-content-VNS-kanan {
+        width: 100%;
+        /* gap: 6px; */
+        /* border: 1px red solid; */
+    }
+
+    /* area news */
+
+    .content-news {
+        height: 80%;
+        /* border: 1px blue solid; */
+    }
+
+    .title-news {
+        font-size: 26px;
+    }
+
+    .box-news {
+        height: 60px;
+        padding: 6px;
+    }
+
+    .area-image {
+        /* height: 100%; */
+        width: 40%;
+    }
+
+    .tag-top-info {
+        font-size: 14px;
+    }
+
+    .desk-top-info {
+        font-size: 12px;
+    }
+
+    .date-top-info {
+        font-size: 10px;
+    }
+    /* ------------ */
+
+    /* area content stream */
+
+    .content-streaming {
+        height: 85px;
+        /* border: 1px  red solid; */
+    }
+
+    .title-streaming {
+        padding-top: 10px;
+        font-size: 26px;
+    }
+
+    .box-streaming {
+        height: 100%;
+    }
+
+    .btn-play-streaming {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn-play-streaming span {
+        font-size: 22px;
+    }
+    /* ------------------- */
+    /* --------------- */
+
+    /* -------------------- */
+}
+
+@media (max-width: 344px) {
+    .area-thumbnail-youtube {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .area-image-thumbnail {
+        /*width: 100%;
+        */
+        height: 160px;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .banner-youtube {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .area-title-thumbnail {
+        margin: 10px 0px;
+    }
+
+    .title-thumbnail {
+        font-size: 30px;
+    }
+
+    /* page youtube 2 */
+    .area-video-youtube {
+        margin: 20px 8px 0px 8px;
+    }
+
+    .text-choose {
+        font-size: 12px;
+    }
+
+    .dropdown-btn-search {
+        width: 100px;
+        /* padding: 5px; */
+        font-size: 10px;
+    }
+
+    .dropdown-item {
+        font-size: 10px;
+    }
+
+    .video {
+        display: flex;
+    }
+
+    .video--wrapper {
+        width: 100%;
+    }
+
+    .video--details__avatar img {
+        width: 25px;
+        height: 25px;
+        display: none;
+    }
+
+    .video--details {
+        padding: 0px 10px;
+        width: 50%;
+    }
+
+    .video--details__title {
+        font-size: 12px;
+    }
+
+    .video--details__channelTitle {
+        font-size: 12px;
+    }
+
+    .video--details__meta h3 {
+        margin: 0px 0px;
+        font-family: "Poppins";
+        font-size: 13px;
+        color: white;
+    }
+
+    .video--details__meta-data {
+        display: flex;
+        gap: 10px;
+        font-size: 0.5rem;
+        color: #ffffff;
+        font-family: "Poppins";
+        font-weight: 200;
+    }
+
+    .video--thumbnail {
+        height: fit-content;
+        width: 50%;
+    }
+
+    .video--thumbnail img {
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    .video--thumbnail__overlays {
+        font-size: 8px;
+        margin: 5px;
+    }
+
+    .modal-content {
+        width: 55%; /* Diperkecil lagi untuk layar mobile */
+    }
+    iframe {
+        height: 120px; /* Tinggi iframe lebih rendah */
+    }
+    /* -------------------- */
+
+    /* page youtube 3 */
+
+    .page-youtube-3 {
+        height: auto;
+    }
+
+    .line-VNS {
+        width: 100%;
+        border: 1px white solid;
+    }
+
+    .area-event-news-streaming {
+        margin: 15px 8px 25px 8px;
+    }
+
+    .area-content-VNS {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    /* content kiri */
+
+    .area-content-VNS-kiri {
+        width: 100%;
+    }
+
+    .title-event {
+        font-size: 26px;
+    }
+
+    .content-kiri-event {
+        gap: 10px;
+        height: 555px;
+    }
+
+    .area-event-mid {
+        height: 50%;
+    }
+
+    .area-countdown {
+        height: 55px;
+        padding: 10px 15px;
+        padding: 8px;
+    }
+
+    .countdown {
+        width: 60%;
+        gap: 8px;
+    }
+
+    .area-days-date {
+        width: 40%;
+    }
+
+    .timer {
+        font-size: 22px;
+    }
+
+    .title-timer {
+        font-size: 10px;
+    }
+
+    .date-month {
+        font-size: 20px;
+    }
+
+    .year {
+        font-size: 20px;
+    }
+    /* ---------------- */
+    /* pop up event */
+    .popup-content-event {
+        width: 200px;
+        height: 110px;
+        padding: 15px;
+    }
+
+    .area-info-event {
+        gap: 3px;
+    }
+
+    .desk-event {
+        font-size: 8px;
+    }
+
+    .jam-event {
+        font-size: 10px;
+    }
+
+    .title-box-event {
+        font-size: 18px;
+    }
+
+    .link-event {
+        font-size: 10px;
+    }
+    /* -------------- */
+    /* box- bawah */
+    .area-event-bottom {
+        gap: 10px;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .box-event {
+        width: 100%;
+        height: 50%;
+    }
+
+    .area-days-date-right {
+        height: 25px;
+        padding: 8px;
+    }
+
+    .date-month-right {
+        font-size: 16px;
+    }
+
+    .year-right {
+        font-size: 16px;
+    }
+    /* ------------- */
+
+    /* --------------- */
+
+    /* content kanan */
+    .area-content-VNS-kanan {
+        width: 100%;
+        /* gap: 6px; */
+        /* border: 1px red solid; */
+    }
+
+    /* area news */
+
+    .content-news {
+        height: 80%;
+        /* border: 1px blue solid; */
+    }
+
+    .title-news {
+        font-size: 26px;
+    }
+
+    .box-news {
+        height: 60px;
+        padding: 6px;
+    }
+
+    .area-top-image {
+        width: 40%;
+    }
+
+    .tag-top-info {
+        font-size: 12px;
+    }
+
+    .desk-top-info {
+        font-size: 10px;
+    }
+
+    .date-top-info {
+        font-size: 8px;
+    }
+    /* ------------ */
+
+    /* area content stream */
+
+    .content-streaming {
+        height: 85px;
+        /* border: 1px  red solid; */
+    }
+
+    .title-streaming {
+        padding-top: 10px;
+        font-size: 26px;
+    }
+
+    .box-streaming {
+        height: 100%;
+    }
+
+    .btn-play-streaming {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn-play-streaming span {
+        font-size: 22px;
+    }
+    /* ------------------- */
+    /* --------------- */
+
+    /* -------------------- */
+}
+@media (max-width: 320px) {
+    .area-thumbnail-youtube {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .area-image-thumbnail {
+        /*width: 100%;
+        */
+        height: 160px;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .banner-youtube {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .area-title-thumbnail {
+        margin: 10px 0px;
+    }
+
+    .title-thumbnail {
+        font-size: 30px;
+    }
+
+    /* page youtube 2 */
+    .area-video-youtube {
+        margin: 20px 8px 0px 8px;
+    }
+
+    .text-choose {
+        font-size: 12px;
+    }
+
+    .dropdown-btn-search {
+        width: 100px;
+        /* padding: 5px; */
+        font-size: 10px;
+    }
+
+    .dropdown-item {
+        font-size: 10px;
+    }
+
+    .video {
+        display: flex;
+    }
+
+    .video--wrapper {
+        width: 100%;
+    }
+
+    .video--details__avatar img {
+        width: 25px;
+        height: 25px;
+        display: none;
+    }
+
+    .video--details {
+        padding: 0px 10px;
+        width: 50%;
+    }
+
+    .video--details__title {
+        font-size: 12px;
+    }
+
+    .video--details__channelTitle {
+        font-size: 12px;
+    }
+
+    .video--details__meta h3 {
+        margin: 0px 0px;
+        font-family: "Poppins";
+        font-size: 13px;
+        color: white;
+    }
+
+    .video--details__meta-data {
+        display: flex;
+        gap: 10px;
+        font-size: 0.5rem;
+        color: #ffffff;
+        font-family: "Poppins";
+        font-weight: 200;
+    }
+
+    .video--thumbnail {
+        height: fit-content;
+        width: 50%;
+    }
+
+    .video--thumbnail img {
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    .video--thumbnail__overlays {
+        font-size: 8px;
+        margin: 5px;
+    }
+
+    .modal-content {
+        width: 55%; /* Diperkecil lagi untuk layar mobile */
+    }
+    iframe {
+        height: 120px; /* Tinggi iframe lebih rendah */
+    }
+    /* -------------------- */
+
+    /* page youtube 3 */
+
+    .page-youtube-3 {
+        height: auto;
+    }
+
+    .line-VNS {
+        width: 100%;
+        border: 1px white solid;
+    }
+
+    .area-event-news-streaming {
+        margin: 25px 8px 25px 8px;
+    }
+
+    .area-content-VNS {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    /* content kiri */
+
+    .area-content-VNS-kiri {
+        width: 100%;
+    }
+
+    .title-event {
+        font-size: 26px;
+    }
+
+    .content-kiri-event {
+        gap: 10px;
+        height: 555px;
+    }
+
+    .area-event-mid {
+        height: 50%;
+    }
+
+    .area-countdown {
+        height: 55px;
+        padding: 10px 15px;
+        padding: 8px;
+    }
+
+    .countdown {
+        width: 60%;
+        gap: 8px;
+    }
+
+    .area-days-date {
+        width: 40%;
+    }
+
+    .timer {
+        font-size: 22px;
+    }
+
+    .title-timer {
+        font-size: 10px;
+    }
+
+    .date-month {
+        font-size: 20px;
+    }
+
+    .year {
+        font-size: 20px;
+    }
+    /* ---------------- */
+    /* pop up event */
+    .popup-content-event {
+        width: 200px;
+        height: 110px;
+        padding: 15px;
+    }
+
+    .area-info-event {
+        gap: 3px;
+    }
+
+    .desk-event {
+        font-size: 8px;
+    }
+
+    .jam-event {
+        font-size: 10px;
+    }
+
+    .title-box-event {
+        font-size: 18px;
+    }
+
+    .link-event {
+        font-size: 10px;
+    }
+    /* -------------- */
+    /* box- bawah */
+    .area-event-bottom {
+        gap: 10px;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .box-event {
+        width: 100%;
+        height: 50%;
+    }
+
+    .area-days-date-right {
+        height: 25px;
+        padding: 8px;
+    }
+
+    .date-month-right {
+        font-size: 16px;
+    }
+
+    .year-right {
+        font-size: 16px;
+    }
+    /* ------------- */
+
+    /* --------------- */
+
+    /* content kanan */
+    .area-content-VNS-kanan {
+        width: 100%;
+        /* gap: 6px; */
+        /* border: 1px red solid; */
+    }
+
+    /* area news */
+
+    .content-news {
+        height: 80%;
+        /* border: 1px blue solid; */
+    }
+
+    .title-news {
+        font-size: 26px;
+    }
+
+    .box-news {
+        height: 60px;
+        padding: 6px;
+    }
+
+    .area-top-image {
+        width: 40%;
+    }
+
+    .tag-top-info {
+        font-size: 12px;
+    }
+
+    .desk-top-info {
+        font-size: 10px;
+    }
+
+    .date-top-info {
+        font-size: 8px;
+    }
+    /* ------------ */
+
+    /* area content stream */
+
+    .content-streaming {
+        height: 85px;
+        /* border: 1px  red solid; */
+    }
+
+    .title-streaming {
+        padding-top: 10px;
+        font-size: 26px;
+    }
+
+    .box-streaming {
+        height: 100%;
+    }
+
+    .btn-play-streaming {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn-play-streaming span {
+        font-size: 22px;
+    }
+    /* ------------------- */
+    /* --------------- */
+
+    /* -------------------- */
+}
