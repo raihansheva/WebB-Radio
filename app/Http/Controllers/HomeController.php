@@ -131,7 +131,7 @@ class HomeController extends Controller
         // }
 
         $playlist = Youtube::first();
-        $apiKey = env('YOUTUBE_API_KEY');
+        $apiKey = 'AIzaSyB-c0ageJpHiB5RN73CIXLTDiAHsuEDTjs';
         $playlistId = $playlist->link_youtube;
         // dd($topInfo);
         // Panggil YouTube API untuk mendapatkan video dari playlist

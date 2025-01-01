@@ -197,13 +197,19 @@
         @yield('content')
     </main>
     {{-- ------- --}}
-    <div id="scrollToTopBtn"><i onclick="scrollToTop()" class='bx bx-up-arrow-alt'></i>
-    </div>
+    <div id="floatingButtons">
+        <div id="scrollToTopBtn" onclick="scrollToTop()">
+            <i class='bx bx-up-arrow-alt'></i>
+        </div>
+        <div id="promoteUMKMBtn" onclick="promoteUMKM()">
+            <span>Promosikan UMKM</span>
+        </div>
+    </div>    
     {{-- audio player --}}
     <div class="audio-player-container">
 
         <svg id="visual" viewBox="0 0 900 600" width="1800" height="800" xmlns="http://www.w3.org/2000/svg">
-            <path id="layer1" fill="#f8c301" stroke="#f8c301" stroke-width="2" stroke-linecap="round"></path>
+            <path id="layer1" fill="#24B4BD" stroke="#f8c301" stroke-width="2" stroke-linecap="round"></path>
         </svg>
         <div class="content">
             <div class="area-control-btn">

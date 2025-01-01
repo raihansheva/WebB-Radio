@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', \App\Helpers\Settings::get('site_title', 'Default Site Title'))
+@section('title', \App\Helpers\Settings::get('site_title', 'Default Site Title') )
 
 @push('meta-seo')
     <meta name="description" content="{{ \App\Helpers\Settings::get('site_description', 'Default Site Title') }}">
@@ -100,6 +100,54 @@
                     {{-- @endforeach
                     @else
                     @endif --}}
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page-2" id="program">
+        <div class="area-program">
+            <div class="area-header-program">
+                <h1 class="title-program">PROGRAM</h1>
+            </div>
+            <div class="area-content-program">
+                {{-- <div class="area-tombol">
+                    <div class="tombol-kiri"></div>
+                    <div class="tombol-kanan"></div>
+                </div> --}}
+                <swiper-container class="area-content-box-program" loop="true" autoplay-delay="2500"
+                    autoplay-disable-on-interaction="false"
+                    breakpoints='{
+                        "480": { "slidesPerView": 1 },
+                        "768": { "slidesPerView": 2 },
+                        "1024": { "slidesPerView": 3 },
+                        "1280": { "slidesPerView": 4 },
+                        "2560": { "slidesPerView" : 4}
+                    }'
+                    space-between="20">
+                    @foreach ($program as $programList)
+                        <swiper-slide style="background-image: url('./storage/{{ $programList->image_program }}') "
+                            class="box-program" data-title="{{ $programList->judul_program }}"
+                            data-description="{{ $programList->deskripsi_pendek }}"
+                            data-time="{{ $programList->jam_mulai }} - {{ $programList->jam_selesai }}"
+                            data-slugP="{{ $programList->slug }}" data-deskP="{{ $programList->deskripsi_program }}"
+                            onclick="showPopup(this)">
+                            {{-- <img src="./storage/{{ $programList->image_program }}" alt=""> --}}
+                        </swiper-slide>
+                    @endforeach
+                </swiper-container>
+            </div>
+        </div>
+        <div id="popup" class="popup" style="display: none;" onclick="closePopupOutside(event)">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <div class="area-info-program">
+                    <p class="desk-program">Program Description</p> <!-- Pastikan elemen ini ada -->
+                    <h2 class="title-box-program">Program Title</h2> <!-- Pastikan elemen ini ada -->
+                    <p class="jam-program">Program Time</p> <!-- Pastikan elemen ini ada -->
+                    <a href="#" class="detail-link-program">
+                        <p class="link-program">See detail</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -231,114 +279,6 @@
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="page-2" id="program">
-        <div class="area-program">
-            <div class="area-header-program">
-                <h1 class="title-program">PROGRAM</h1>
-            </div>
-            <div class="area-content-program">
-                <div class="area-tombol">
-                    <div class="tombol-kiri"></div>
-                    <div class="tombol-kanan"></div>
-                </div>
-                <swiper-container class="area-content-box-program" loop="true" autoplay-delay="2500"
-                    autoplay-disable-on-interaction="false"
-                    breakpoints='{
-                        "480": { "slidesPerView": 1 },
-                        "768": { "slidesPerView": 2 },
-                        "1024": { "slidesPerView": 3 },
-                        "1280": { "slidesPerView": 4 },
-                        "2560": { "slidesPerView" : 4}
-                    }'
-                    space-between="20">
-                    @foreach ($program as $programList)
-                        <swiper-slide style="background-image: url('./storage/{{ $programList->image_program }}') "
-                            class="box-program" data-title="{{ $programList->judul_program }}"
-                            data-description="{{ $programList->deskripsi_pendek }}"
-                            data-time="{{ $programList->jam_mulai }} - {{ $programList->jam_selesai }}"
-                            data-slugP="{{ $programList->slug }}" data-deskP="{{ $programList->deskripsi_program }}"
-                            onclick="showPopup(this)">
-                            {{-- <img src="./storage/{{ $programList->image_program }}" alt=""> --}}
-                        </swiper-slide>
-                    @endforeach
-                </swiper-container>
-            </div>
-        </div>
-        <div id="popup" class="popup" style="display: none;" onclick="closePopupOutside(event)">
-            <div class="popup-content">
-                <span class="close" onclick="closePopup()">&times;</span>
-                <div class="area-info-program">
-                    <p class="desk-program">Program Description</p> <!-- Pastikan elemen ini ada -->
-                    <h2 class="title-box-program">Program Title</h2> <!-- Pastikan elemen ini ada -->
-                    <p class="jam-program">Program Time</p> <!-- Pastikan elemen ini ada -->
-                    <a href="#" class="detail-link-program">
-                        <p class="link-program">See detail</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="page-ig-twitter" id="ig-twitter">
-        <div class="area-ig-twitter">
-            <div class="line-ig-twitter"></div>
-            <div class="area-content-ig-twitter">
-                <div class="area-content-feed-instagram">
-                    <div class="header-feed-instagram">
-                        <h1 class="title-feed-instagram">Feed Instagram</h1>
-                    </div>
-                    <div class="content-feed-instagram">
-                        {{-- <div class="area-tombol">
-                            <div class="tombol-kiri"></div>
-                            <div class="tombol-kanan"></div>
-                        </div> --}}
-                        <swiper-container class="area-content-box-feed-instagram" loop="true" autoplay-delay="2500"
-                            autoplay-disable-on-interaction="false"
-                            breakpoints='{
-                                    "480": { "slidesPerView": 1 },
-                                    "768": { "slidesPerView": 3 },
-                                    "1024": { "slidesPerView": 3 },
-                                    "1280": { "slidesPerView": 4 },
-                                    "2560": { "slidesPerView" : 4}
-                                }'
-                            space-between="20">
-                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
-                                onclick="showPopupFeed(this)">
-                            </swiper-slide>
-                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
-                                onclick="showPopupFeed(this)">
-                            </swiper-slide>
-                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
-                                onclick="showPopupFeed(this)">
-                            </swiper-slide>
-                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
-                                onclick="showPopupFeed(this)">
-                            </swiper-slide>
-                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
-                                onclick="showPopupFeed(this)">
-                            </swiper-slide>
-                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
-                                onclick="showPopupFeed(this)">
-                            </swiper-slide>
-                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
-                                onclick="showPopupFeed(this)">
-                            </swiper-slide>
-                        </swiper-container>
-                    </div>
-                </div>
-                <div id="popupFeed" class="popup-feed" style="display: none;" onclick="closePopupOutsideFeed(event)">
-                    <div class="popup-content-feed">
-                        <span class="close" onclick="closePopupFeed()">&times;</span>
-                        <div class="area-info-feed">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="area-content-twitter">
                 </div>
             </div>
         </div>
@@ -506,6 +446,66 @@
                             <h1 class="text-video">See more</h1>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-ig-twitter" id="ig-twitter">
+        <div class="area-ig-twitter">
+            <div class="line-ig-twitter"></div>
+            <div class="area-content-ig-twitter">
+                <div class="area-content-feed-instagram">
+                    <div class="header-feed-instagram">
+                        <h1 class="title-feed-instagram">Feed Instagram</h1>
+                    </div>
+                    <div class="content-feed-instagram">
+                        {{-- <div class="area-tombol">
+                            <div class="tombol-kiri"></div>
+                            <div class="tombol-kanan"></div>
+                        </div> --}}
+                        <swiper-container class="area-content-box-feed-instagram" loop="true" autoplay-delay="2500"
+                            autoplay-disable-on-interaction="false"
+                            breakpoints='{
+                                    "480": { "slidesPerView": 1 },
+                                    "768": { "slidesPerView": 3 },
+                                    "1024": { "slidesPerView": 3 },
+                                    "1280": { "slidesPerView": 4 },
+                                    "2560": { "slidesPerView" : 4}
+                                }'
+                            space-between="20">
+                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
+                                onclick="showPopupFeed(this)">
+                            </swiper-slide>
+                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
+                                onclick="showPopupFeed(this)">
+                            </swiper-slide>
+                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
+                                onclick="showPopupFeed(this)">
+                            </swiper-slide>
+                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
+                                onclick="showPopupFeed(this)">
+                            </swiper-slide>
+                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
+                                onclick="showPopupFeed(this)">
+                            </swiper-slide>
+                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
+                                onclick="showPopupFeed(this)">
+                            </swiper-slide>
+                            <swiper-slide class="box-feed-instagram" data-title="" data-description="" data-time=""
+                                onclick="showPopupFeed(this)">
+                            </swiper-slide>
+                        </swiper-container>
+                    </div>
+                </div>
+                <div id="popupFeed" class="popup-feed" style="display: none;" onclick="closePopupOutsideFeed(event)">
+                    <div class="popup-content-feed">
+                        <span class="close" onclick="closePopupFeed()">&times;</span>
+                        <div class="area-info-feed">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="area-content-twitter">
                 </div>
             </div>
         </div>
