@@ -15,30 +15,30 @@ const getScrollAmount = () => {
     }
 };
 
-tombolKiri.addEventListener("click", () => {
-    if (areaContentBox.scrollLeft === 0) {
-        areaContentBox.scrollLeft = areaContentBox.scrollWidth; // Kembali ke akhir
-    } else {
-        areaContentBox.scrollBy({
-            left: -getScrollAmount(),
-            behavior: "smooth",
-        });
-    }
-});
+// tombolKiri.addEventListener("click", () => {
+//     if (areaContentBox.scrollLeft === 0) {
+//         areaContentBox.scrollLeft = areaContentBox.scrollWidth; // Kembali ke akhir
+//     } else {
+//         areaContentBox.scrollBy({
+//             left: -getScrollAmount(),
+//             behavior: "smooth",
+//         });
+//     }
+// });
 
-tombolKanan.addEventListener("click", () => {
-    if (
-        areaContentBox.scrollLeft + areaContentBox.clientWidth >=
-        areaContentBox.scrollWidth
-    ) {
-        areaContentBox.scrollLeft = 0; // Kembali ke awal
-    } else {
-        areaContentBox.scrollBy({
-            left: getScrollAmount(),
-            behavior: "smooth",
-        });
-    }
-});
+// tombolKanan.addEventListener("click", () => {
+//     if (
+//         areaContentBox.scrollLeft + areaContentBox.clientWidth >=
+//         areaContentBox.scrollWidth
+//     ) {
+//         areaContentBox.scrollLeft = 0; // Kembali ke awal
+//     } else {
+//         areaContentBox.scrollBy({
+//             left: getScrollAmount(),
+//             behavior: "smooth",
+//         });
+//     }
+// });
 
 // ---------------------------------------
 
@@ -59,19 +59,19 @@ const getScrollAmountA = () => {
     }
 };
 
-tombolKiriA.addEventListener("click", () => {
-    areaContentBoxA.scrollBy({
-        left: -getScrollAmountA(),
-        behavior: "smooth",
-    });
-});
+// tombolKiriA.addEventListener("click", () => {
+//     areaContentBoxA.scrollBy({
+//         left: -getScrollAmountA(),
+//         behavior: "smooth",
+//     });
+// });
 
-tombolKananA.addEventListener("click", () => {
-    areaContentBoxA.scrollBy({
-        left: getScrollAmountA(),
-        behavior: "smooth",
-    });
-});
+// tombolKananA.addEventListener("click", () => {
+//     areaContentBoxA.scrollBy({
+//         left: getScrollAmountA(),
+//         behavior: "smooth",
+//     });
+// });
 // ----------------------------------------
 
 // card-streaming
@@ -94,7 +94,7 @@ function showCard(card) {
 function hideCard(card) {
     card.classList.remove("show");
     card.classList.add("hide");
-    setTimeout(() => {
+    setTimeout(() => { 
         card.style.display = "none";
     }, 500);
 }

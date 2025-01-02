@@ -16,17 +16,7 @@
 
 @livewireStyles
 @section('content')
-    <section class="section-banner">
-        <div class="area-banner">
-            <swiper-container class="mySwiper" centered-slides="true" autoplay-delay="2000"
-                autoplay-disable-on-interaction="false" loop="true">
-                @foreach ($banner as $list)
-                    <swiper-slide><img class="image-banner" src="./storage/{{ $list->image_banner }}"
-                            alt=""></swiper-slide>
-                @endforeach
-            </swiper-container>
-        </div>
-    </section>
+    
     <section class="page-1" id="home">
         <div class="area-streaming">
             <div class="header-streaming">
@@ -89,13 +79,47 @@
                 <div class="contentS-kanan">
                     {{-- @if ($streamUpcoming)
                         @foreach ($streamUpcoming as $streamUpcomingList) --}}
-                    <div class="area-nextP">
+                    {{-- <div class="area-nextP">
                         <div class="area-title-nextP">
                             <p class="title-nextP"> Next Program</p>
                         </div>
                         <div class="area-thumbnail-nextP">
                             <img class="image-stream-upcoming" id="program-image" src="" alt="">
                         </div>
+                    </div> --}}
+                    <div class="area-content-program">
+                        {{-- <div class="area-tombol">
+                            <div class="tombol-kiri"></div>
+                            <div class="tombol-kanan"></div>
+                        </div> --}}
+                        <swiper-container class="area-content-box-program" loop="true" autoplay-delay="2500"
+                            autoplay-disable-on-interaction="false"
+                            breakpoints='{
+                                "480": { "slidesPerView": 1 },
+                                "768": { "slidesPerView": 1 },
+                                "1024": { "slidesPerView": 1 },
+                                "1280": { "slidesPerView": 1 },
+                                "2560": { "slidesPerView" : 1}
+                            }'
+                            >
+                            @foreach ($program as $programList)
+                                <swiper-slide
+                                    class="box-program" data-title="{{ $programList->judul_program }}"
+                                    data-description="{{ $programList->deskripsi_pendek }}"
+                                    data-time="{{ $programList->jam_mulai }} - {{ $programList->jam_selesai }}"
+                                    data-slugP="{{ $programList->slug }}" data-deskP="{{ $programList->deskripsi_program }}"
+                                    >
+                                    <div class="container-program">
+                                        <div class="area-header-desk-program">
+                                            <span class="title-box-program">{{ $programList->judul_program }}</span>
+                                        </div>
+                                        <div class="area-time-desk-program">
+                                            <span class="jam-program">{{ $programList->jam_mulai }} - {{ $programList->jam_selesai }}</span>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                            @endforeach
+                        </swiper-container>
                     </div>
                     {{-- @endforeach
                     @else
@@ -104,25 +128,31 @@
             </div>
         </div>
     </section>
-    
-    <section class="page-2" id="program">
+    {{-- <section class="section-banner">
+        <div class="area-banner">
+            <swiper-container class="mySwiper" centered-slides="true" autoplay-delay="2000"
+                autoplay-disable-on-interaction="false" loop="true">
+                @foreach ($banner as $list)
+                    <swiper-slide><img class="image-banner" src="./storage/{{ $list->image_banner }}"
+                            alt=""></swiper-slide>
+                @endforeach
+            </swiper-container>
+        </div>
+    </section> --}}
+    {{-- <section class="page-2" id="program">
         <div class="area-program">
             <div class="area-header-program">
                 <h1 class="title-program">PROGRAM</h1>
             </div>
             <div class="area-content-program">
-                {{-- <div class="area-tombol">
-                    <div class="tombol-kiri"></div>
-                    <div class="tombol-kanan"></div>
-                </div> --}}
                 <swiper-container class="area-content-box-program" loop="true" autoplay-delay="2500"
                     autoplay-disable-on-interaction="false"
                     breakpoints='{
                         "480": { "slidesPerView": 1 },
-                        "768": { "slidesPerView": 2 },
-                        "1024": { "slidesPerView": 3 },
-                        "1280": { "slidesPerView": 4 },
-                        "2560": { "slidesPerView" : 4}
+                        "768": { "slidesPerView": 1 },
+                        "1024": { "slidesPerView": 2 },
+                        "1280": { "slidesPerView": 2 },
+                        "2560": { "slidesPerView" : 2}
                     }'
                     space-between="20">
                     @foreach ($program as $programList)
@@ -132,7 +162,6 @@
                             data-time="{{ $programList->jam_mulai }} - {{ $programList->jam_selesai }}"
                             data-slugP="{{ $programList->slug }}" data-deskP="{{ $programList->deskripsi_program }}"
                             onclick="showPopup(this)">
-                            {{-- <img src="./storage/{{ $programList->image_program }}" alt=""> --}}
                         </swiper-slide>
                     @endforeach
                 </swiper-container>
@@ -142,16 +171,16 @@
             <div class="popup-content">
                 <span class="close" onclick="closePopup()">&times;</span>
                 <div class="area-info-program">
-                    <p class="desk-program">Program Description</p> <!-- Pastikan elemen ini ada -->
-                    <h2 class="title-box-program">Program Title</h2> <!-- Pastikan elemen ini ada -->
-                    <p class="jam-program">Program Time</p> <!-- Pastikan elemen ini ada -->
+                    <p class="desk-program">Program Description</p>
+                    <h2 class="title-box-program">Program Title</h2>
+                    <p class="jam-program">Program Time</p> 
                     <a href="#" class="detail-link-program">
                         <p class="link-program">See detail</p>
                     </a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <section class="page-3" id="info-news">
         <div class="area-info-news">
             <div class="line-info"></div>
@@ -171,16 +200,16 @@
                                         </div>
                                         <div class="line-top-info"></div>
                                         <div class="area-text-desk-top-info">
-                                            <div class="area-tag">
-                                                <p class="tag-top-info">{{ $topInfoList->tagInfo->nama_kategori }}</p>
-                                            </div>
-                                            <div class="area-text">
-                                                <p class="desk-top-info">{{ $topInfoList->judul_info }}</p>
-                                            </div>
                                             <div class="area-date">
                                                 <p class="date-top-info">
                                                     {{ \Carbon\Carbon::parse($topInfoList->date_info)->translatedFormat('l, d F Y') }}
                                                 </p>
+                                            </div>
+                                            <div class="area-text">
+                                                <p class="desk-top-info">{{ $topInfoList->judul_info }}</p>
+                                            </div>
+                                            <div class="area-tag">
+                                                <p class="tag-top-info">{{ $topInfoList->tagInfo->nama_kategori }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -190,6 +219,9 @@
                     </div>
                     <div class="header-news">
                         <h1 class="title-news">Info</h1>
+                        <a class="link-see-all-news" href="">
+                            <span class="see-all-news">See All <i class='bx bx-right-arrow-alt'></i></span>
+                        </a>
                     </div>
                     <div class="content-news">
                         @foreach ($info as $InfoList)
@@ -199,16 +231,16 @@
                                         <img class="image-info" src="./storage/{{ $InfoList->image_info }}" alt="">
                                     </div>
                                     <div class="area-text-desk">
-                                        <div class="area-tag">
-                                            <p class="tag-news">{{ $InfoList->tagInfo->nama_kategori }}</p>
-                                        </div>
-                                        <div class="area-text">
-                                            <p class="desk-news">{{ $InfoList->judul_info }}</p>
-                                        </div>
                                         <div class="area-date">
                                             <p class="date-news">
                                                 {{ \Carbon\Carbon::parse($InfoList->date_info)->translatedFormat('l, d F Y') }}
                                             </p>
+                                        </div>
+                                        <div class="area-text">
+                                            <p class="desk-news">{{ $InfoList->judul_info }}</p>
+                                        </div>
+                                        <div class="area-tag">
+                                            <p class="tag-news">{{ $InfoList->tagInfo->nama_kategori }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -226,23 +258,23 @@
                             @foreach ($trending_info as $trendingInfoList)
                                 <a class="link-box-trending-info" href="/info-detail/{{ $trendingInfoList->slug }}">
                                     <div class="box-trending-info">
-                                        {{-- <div class="area-image-trending-info">
+                                        <div class="area-image-trending-info">
                                             <img class="image-trending-info" src="./storage/{{ $trendingInfoList->image_info }}"
                                                 alt="">
-                                        </div> --}}
+                                        </div>
                                         <div class="line-trending-info"></div>
                                         <div class="area-text-desk-trending-info">
-                                            <div class="area-tag">
-                                                <p class="tag-trending-info">
-                                                    {{ $trendingInfoList->tagInfo->nama_kategori }}</p>
-                                            </div>
-                                            <div class="area-text">
-                                                <p class="desk-trending-info">{{ $trendingInfoList->judul_info }}</p>
-                                            </div>
                                             <div class="area-date">
                                                 <p class="date-trending-info">
                                                     {{ \Carbon\Carbon::parse($trendingInfoList->date_info)->translatedFormat('l, d F Y') }}
                                                 </p>
+                                            </div>
+                                            <div class="area-text">
+                                                <p class="desk-trending-info">{{ $trendingInfoList->judul_info }}</p>
+                                            </div>
+                                            <div class="area-tag">
+                                                <p class="tag-trending-info">
+                                                    {{ $trendingInfoList->tagInfo->nama_kategori }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -250,10 +282,10 @@
                             @endforeach
                         </div>
                     </div>
-                    <div class="header-info">
-                        <h1 class="title-info">Kategori Info</h1>
-                    </div>
                     <div class="content-info">
+                        <div class="header-info">
+                            <h1 class="title-info">Kategori Info</h1>
+                        </div>
                         @foreach ($kategoriInfo as $kategoriInfoList)
                             <div class="box-info">
                                 <a href="/info-tag/{{ $kategoriInfoList->nama_kategori }}">
@@ -271,12 +303,12 @@
                                 </a>
                             </div>
                         @endforeach
-                    </div>
-                    <div class="area-bottom-info">
-                        <div class="box-title-bottom">
-                            <a href="/info-news">
-                                <h1 class="title-bottom-info">Show more</h1>
-                            </a>
+                        <div class="area-bottom-info">
+                            <div class="box-title-bottom">
+                                <a href="/info-news">
+                                    <h1 class="title-bottom-info">Show more</h1>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -574,10 +606,10 @@
                     <h1 class="title-announcer">Announcer</h1>
                 </div>
                 <div class="content-announcer">
-                    <div class="area-tombol-announcer">
+                    {{-- <div class="area-tombol-announcer">
                         <div class="tombol-kiri-announcer"></div>
                         <div class="tombol-kanan-announcer"></div>
-                    </div>
+                    </div> --}}
                     <swiper-container class="area-content-box-announcer" loop="true" autoplay-delay="2500"
                         autoplay-disable-on-interaction="false"
                         breakpoints='{
@@ -738,7 +770,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="area-content-artis">
+                {{-- <div class="area-content-artis">
                     <div class="header-artis">
                         <h1 class="title-artis">INFO ARTIS</h1>
                     </div>
@@ -752,9 +784,6 @@
                                         <div class="artis-name">
                                             <p class="nama">{{ $artisList->judul_berita }}</p>
                                         </div>
-                                        {{-- <div class="artis-bio">
-                                            <p class="bio">{{ $artisList->bio }}</p>
-                                        </div> --}}
                                     </div>
                                 </div>
                             </a>
@@ -766,17 +795,8 @@
                                 </a>
                             </div>
                         </div>
-                        {{-- <div id="popupArtis" class="popup-artis" style="display: none;"
-                            onclick="closePopupOutsideArtis(event)">
-                            <div class="popup-content-artis">
-                                <span class="close" onclick="closePopupArtis()">&times;</span>
-                                <div class="area-info-artis">
-
-                                </div>
-                            </div>
-                        </div> --}}
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
