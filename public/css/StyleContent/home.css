@@ -699,36 +699,44 @@ swiper-slide img {
     height: fit-content;
     /* border: 1px white solid; */
     display: flex;
-    /* justify-content: center; */
+    justify-content: end;
 }
 
 .box-title-bottom {
     width: fit-content;
     height: fit-content;
     margin-top: 10px;
+    text-align: end;
 }
 
 .title-bottom-info {
     margin: 0px;
     font-family: "Poppins";
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     color: black;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
     border-radius: 8px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+    display: flex;
+    gap: 3px;
+    align-items: center;
 }
 
-.title-bottom-info:hover {
+.title-bottom-info i{
+    font-size: 20px;
+}
+
+/* .title-bottom-info:hover {
     background-color: white;
     color: black;
     font-weight: 400;
-}
+} */
 
 /* ------------------ */
 
@@ -1870,21 +1878,29 @@ swiper-slide img {
     font-size: 18px;
     font-weight: 200;
     font-family: "Poppins";
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     color: white;
-    border: 1px white solid;
+    /* border: 1px white solid; */
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
 
-.text-podcast:hover {
+.text-podcast i{
+    font-size: 26 px;
+    color: white;
+}
+
+/* .text-podcast:hover {
     background-color: white;
     color: black;
-}
+} */
 
 .content-podcast {
     width: 100%;

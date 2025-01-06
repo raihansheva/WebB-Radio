@@ -308,7 +308,8 @@
                         <div class="area-bottom-info">
                             <div class="box-title-bottom">
                                 <a href="/info-news">
-                                    <h1 class="title-bottom-info">Show more</h1>
+                                    {{-- <span class="see-all-news">See All </span> --}}
+                                    <span class="title-bottom-info">Show more <i class='bx bx-right-arrow-alt'></i></span>
                                 </a>
                             </div>
                         </div>
@@ -428,7 +429,7 @@
                         </div>
                         <div class="area-text-podcast">
                             <a href="/podcast">
-                                <h1 class="text-podcast">Other podcast</h1>
+                                <h1 class="text-podcast">Other podcast <i class='bx bx-right-arrow-alt'></i></h1>
                             </a>
                         </div>
                     </div>
