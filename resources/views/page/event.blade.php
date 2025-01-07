@@ -25,36 +25,36 @@
                         data-date="{{ \Carbon\Carbon::parse($eventSoonList->date_event)->format('d F Y') }}"
                         style="background-image: url('./storage/{{ $eventSoonList->image_event }}')"
                         data-slug="{{ $eventSoonList->slug }}" data-deskShort="{{ $eventSoonList->deskripsi_event }}">
-                    </div>
-                    <span id="dataTime" style="display: none">{{ $eventSoonList->time_countdown }}</span>
-                    <div class="area-countdown">
-                        <div class="area-content-countdown">
-                            <div class="countdown">
-                                <div class="time-countdown">
-                                    <h2 class="timer" id="days"></h2>
-                                    <span class="title-timer">Days</span>
+                        <div class="area-countdown">
+                            <div class="area-content-countdown">
+                                <div class="countdown">
+                                    <div class="time-countdown">
+                                        <h2 class="timer" id="days"></h2>
+                                        <span class="title-timer">Days</span>
+                                    </div>
+                                    <div class="time-countdown">
+                                        <h2 class="timer" id="hours"></h2>
+                                        <span class="title-timer">Hours</span>
+                                    </div>
+                                    <div class="time-countdown">
+                                        <h2 class="timer" id="minutes"></h2>
+                                        <span class="title-timer">Minutes</span>
+                                    </div>
+                                    <div class="time-countdown">
+                                        <h2 class="timer" id="seconds"></h2>
+                                        <span class="title-timer">Second</span>
+                                    </div>
                                 </div>
-                                <div class="time-countdown">
-                                    <h2 class="timer" id="hours"></h2>
-                                    <span class="title-timer">Hours</span>
-                                </div>
-                                <div class="time-countdown">
-                                    <h2 class="timer" id="minutes"></h2>
-                                    <span class="title-timer">Minutes</span>
-                                </div>
-                                <div class="time-countdown">
-                                    <h2 class="timer" id="seconds"></h2>
-                                    <span class="title-timer">Second</span>
-                                </div>
-                            </div>
-                            <div class="area-days-date">
-                                <div class="box-days-date">
-                                    <h3 class="date-month">
-                                        {{ \Carbon\Carbon::parse($eventSoonList->date_event)->format('d F Y') }}</h3>
+                                <div class="area-days-date">
+                                    <div class="box-days-date">
+                                        <h3 class="date-month">
+                                            {{ \Carbon\Carbon::parse($eventSoonList->date_event)->format('d F Y') }}</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <span id="dataTime" style="display: none">{{ $eventSoonList->time_countdown }}</span>
                 @endforeach
             </div>
         </div>
@@ -75,11 +75,20 @@
             <div class="header-other-event">
                 <h2 class="title-event-other">Other Upcoming Event</h2>
             </div>
-            <div class="area-content-OV">
+            <swiper-container class="area-content-OV" loop="true" autoplay-delay="2500"
+                autoplay-disable-on-interaction="false"
+                breakpoints='{
+                                    "480": { "slidesPerView": 1 },
+                                    "768": { "slidesPerView": 1 },
+                                    "1024": { "slidesPerView": 2 },
+                                    "1280": { "slidesPerView": 2 },
+                                    "2560": { "slidesPerView" : 2}
+                                }'
+                space-between="20">
                 @foreach ($event_upcoming as $eventUpcomingList)
-                    <div class="content-event-OV"
+                    <swiper-slide class="content-event-OV"
                         style="background-image: url('./storage/{{ $eventUpcomingList->image_event }}')"
-                        onclick="showPopupEvent(this)" data-description="{{ $eventUpcomingList->deskripsi_event }}"
+                        onclick="showPopupEvent(this)" data-description="{{ $eventUpcomingList->deskripsi_pendek }}"
                         data-date="{{ \Carbon\Carbon::parse($eventUpcomingList->date_event)->format('d F Y') }}"
                         data-slug="{{ $eventUpcomingList->slug }}"
                         data-deskShort="{{ $eventUpcomingList->deskripsi_event }}">
@@ -92,16 +101,17 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </swiper-slide>
                 @endforeach
-            </div>
-            <div class="line-event"></div>
+            </swiper-container>
+        </div>
+        <div class="line-event"></div>
         </div>
     </section>
     <section class="page-event-3">
         <div class="area-programE">
             <div class="header-programE">
-                <h2 class="title-programE">Program Ardan</h2>
+                <h2 class="title-programE">Program B-Radio</h2>
             </div>
             <div class="content-programE">
                 @foreach ($program as $programList)
@@ -120,7 +130,7 @@
                 <div class="area-info-program">
                     <p class="desk-program">Program Description</p> <!-- Pastikan elemen ini ada -->
                     <h2 class="title-box-program">Program Title</h2> <!-- Pastikan elemen ini ada -->
-                    <p class="jam-program">Program Time</p> 
+                    <p class="jam-program">Program Time</p>
                     <a href="#" class="detail-link-program">
                         <p class="link-program">See detail</p>
                     </a>
