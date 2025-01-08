@@ -13,7 +13,7 @@
     <section class="page-podcast-1">
         @foreach ($bannerP as $bannerPList)
             <div class="area-header-podcast">
-                <h2 class="title-header-podcast">{{ $bannerPList->title_banner_podcast }}</h2>
+                <h2 class="title-header-podcast">B-Radio Podcast</h2>
                 <img class="banner-podcast" src="./storage/{{ $bannerPList->banner_podcast }}" alt="" srcset="">
             </div>
         @endforeach
@@ -104,7 +104,7 @@
                 <div class="header-news">
                     <h1 class="title-news">Top Info</h1>
                     <a class="link-more-news" href="/info-news">
-                        <span class="more-news">See All <i class='bx bx-right-arrow-alt'></i></span>
+                        <span class="more-news">More Info <i class='bx bx-right-arrow-alt'></i></span>
                     </a>
                 </div>
                 <div class="content-news">
