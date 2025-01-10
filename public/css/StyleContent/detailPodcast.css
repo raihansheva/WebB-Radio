@@ -3,26 +3,31 @@
 .page-detail-1 {
     width: 100%;
     height: 1000px;
+    background-color: #ffffff;
 }
 
 .area-detail-podcast {
     width: auto;
-    margin: 30px 64px 0px 64px;
+    margin: 0px 64px 0px 64px;
     height: auto;
     /* border: 1px red solid; */
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 /* area detail kiri */
 .area-detail-kiri {
-    width: 65%;
+    width: 100%;
     height: auto;
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
     /* border: 1px white solid; */
 }
 
 .area-image-DP {
-    width: 100%;
+    width: 55%;
     height: auto;
     /* border: 1px red solid; */
 }
@@ -264,9 +269,9 @@
 }
 
 .content-detail-podcast {
-    width: 100%;
+    width: 45%;
     height: auto;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     display: flex;
 }
 
@@ -278,6 +283,8 @@
 }
 
 /* content kiri */
+
+
 .content-detail-kiri {
     width: 100%;
     height: auto;
@@ -300,11 +307,11 @@
 .detail-genre {
     font-family: "Bebas Neue";
     font-size: 24px;
-    color: white;
+    /* color: white; */
     font-weight: 200;
     margin: 0px;
     padding: 5px 20px;
-    border: 1px white solid;
+    border: 1px black solid;
     text-align: center;
     border-radius: 10px;
 }
@@ -318,7 +325,7 @@
 .detail-title {
     font-family: "Bebas Neue";
     font-weight: 200;
-    color: white;
+    /* color: white; */
     margin: 0px;
     font-size: 40px;
 }
@@ -328,21 +335,21 @@
     max-height: 380px;
     height: 380px;
     /* border: 1px red solid; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .desk-podcast {
     font-family: "poppins";
     font-size: 18px;
-    font-weight: 200;
-    color: white;
+    font-weight: 300;
+    /* color: white; */
     margin: 0px;
 }
 /* ------------------ */
 
 /* area detail kanan */
 .area-detail-kanan {
-    width: 35%;
+    width: 100%;
     height: auto;
     /* border: 1px green solid; */
 }
@@ -357,14 +364,18 @@
     font-size: 40px;
     font-weight: 300;
     margin: 0px;
-    color: white;
+    /* color: white; */
 }
 
 .area-episodeP {
     width: 100%;
-    height: 900px;
-    overflow-y: auto;
+    height: auto;
+    /* overflow-y: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px red solid; */
     gap: 15px;
+    margin-top: 10px;
 }
 
 .card-episode a {
@@ -377,15 +388,22 @@
 /* card episode */
 
 .card-episode {
-    width: auto;
-    height: auto;
+    width: calc(25% - 15px);
+    height: fit-content;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 25px 15px;
     cursor: pointer;
     margin-right: 10px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Shadow */
+
 }
+
+.card-header-episode{
+    margin-top: 8px;
+}
+
 .genre-episode {
     width: fit-content;
     height: fit-content;
@@ -467,13 +485,13 @@
 
 .area-content-OP {
     /* width: 100%; */
-    height: 550px;
-    background-color: #353535;
+    height: fit-content;
+    background-color: transparent;
     /* position: relative; */
     /* top: 85px; */
-    margin-top: 60px;
+    /* margin-top: 60px; */
     padding: 0px 64px 0px 64px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .header-OP {
@@ -496,7 +514,7 @@
     width: 100%;
     height: auto;
     /* border: 1px red solid; */
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .area-tombol-OP {
@@ -551,8 +569,9 @@
 
 .card-podcast {
     flex: 1 0 calc(33.33% - 14px); /* Membuat card mengambil 50% lebar, dengan margin antar card */
-    height: 435px;
+    height: fit-content;
     cursor: pointer;
+    
 }
 
 .card-podcast .card-header-podcast {
@@ -571,10 +590,11 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    border-bottom-right-radius: 10px;
+    /* gap: 8px; */
+    /* border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 10px;
     padding: 15px;
 }
 
@@ -582,6 +602,7 @@
     width: 100%;
     height: auto;
     /* border: 1px black solid; */
+    margin-top: 8px;
 }
 
 .genre {
@@ -593,10 +614,10 @@
 }
 
 .title-genre {
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Bebas Neue";
     font-weight: 200;
-    margin: 5px 25px;
+    margin: 2px 15px;
 }
 
 .area-card-text {
@@ -605,7 +626,7 @@
 }
 
 .card-text-podcast {
-    font-size: 34px;
+    font-size: px;
     margin: 0px;
     font-weight: 200;
     font-family: "Bebas Neue";
@@ -613,7 +634,7 @@
 
 .card-image-podcast {
     width: 100%;
-    height: 195px;
+    height: 220px;
     background-color: #f0f0f0;
     border-radius: 10px;
 }
@@ -787,7 +808,7 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: white;
     cursor: pointer;
     /* margin-top: 15px; */
     display: flex;
@@ -796,9 +817,9 @@
     transition: all 0.4s ease-in-out;
 }
 
-.btn-play-video:hover {
+/* .btn-play-video:hover {
     background-color: #dfc102;
-}
+} */
 
 .btn-play-video span {
     color: black;
@@ -827,7 +848,7 @@
     height: 55px;
     width: 55px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: white;
     cursor: pointer;
     /* margin-top: 15px; */
     display: flex;
@@ -836,9 +857,9 @@
     transition: all 0.4s ease-in-out;
 }
 
-.btn-play-video-mid:hover {
+/* .btn-play-video-mid:hover {
     background-color: #dfc102;
-}
+} */
 
 .btn-play-video-mid span {
     color: black;
@@ -1046,7 +1067,7 @@
     height: 55px;
     width: 55px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: white;
     cursor: pointer;
     display: flex;
     justify-content: center;

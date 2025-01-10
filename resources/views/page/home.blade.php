@@ -106,7 +106,7 @@
                                     data-description="{{ $programList->deskripsi_pendek }}"
                                     data-time="{{ $programList->jam_mulai }} - {{ $programList->jam_selesai }}"
                                     data-slugP="{{ $programList->slug }}"
-                                    data-deskP="{{ $programList->deskripsi_program }}">
+                                    data-deskP="{{ $programList->deskripsi_program }}" onclick="showPopup(this)" >
                                     <div class="container-program">
                                         <div class="area-header-desk-program">
                                             <span class="title-box-program">{{ $programList->judul_program }}</span>
@@ -123,6 +123,19 @@
                     {{-- @endforeach
                     @else
                     @endif --}}
+                    <div id="popup" class="popup" style="display: none;" onclick="closePopupOutside(event)">
+                        <div class="popup-content">
+                            <span class="close" onclick="closePopup()">&times;</span>
+                            <div class="area-info-program">
+                                <p class="desk-program">Program Description</p> <!-- Pastikan elemen ini ada -->
+                                <h2 class="title-box-program">Program Title</h2> <!-- Pastikan elemen ini ada -->
+                                <p class="jam-program">Program Time</p> <!-- Pastikan elemen ini ada -->
+                                <a href="#" class="detail-link-program">
+                                    <p class="link-program">See detail</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

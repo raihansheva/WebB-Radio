@@ -92,18 +92,25 @@
                             <div class="card-episode">
                                 <a href="/detail-podcast/{{ $epsgroupList->slug }}">
                                     <div class="card-body-episode">
+                                        <div class="card-image-podcast-episode">
+                                            <img src="./storage/{{ $epsgroupList->image_podcast }}" alt=""
+                                                class="image-podcast">
+                                        </div>
                                         <div class="card-header-episode">
                                             <div class="genre-episode">
-                                                <h1 class="title-genre-episode">{{ $epsgroupList->genre_podcast }}</h1>
+                                                @if (is_array($epsgroupList->genre_podcast))
+                                                    @foreach ($epsgroupList->genre_podcast as $genre)
+                                                        <h1 class="title-genre-episode">{{ $genre }}
+                                                        </h1>
+                                                    @endforeach
+                                                @else
+                                                    <h1 class="title-genre-episode">-</h1>
+                                                @endif
                                             </div>
                                             <div class="area-card-text-episode">
                                                 <h1 class="card-text-podcast-episode">{{ $epsgroupList->judul_podcast }}
                                                 </h1>
                                             </div>
-                                        </div>
-                                        <div class="card-image-podcast-episode">
-                                            <img src="./storage/{{ $epsgroupList->image_podcast }}" alt=""
-                                                class="image-podcast">
                                         </div>
                                     </div>
                                 </a>
@@ -127,14 +134,28 @@
                     <h1 class="title-OP">Other Podcast</h1>
                 </div>
                 <div class="content-OP">
-                    <div class="area-tombol-OP">
+                    {{-- <div class="area-tombol-OP">
                         <div class="tombol-kiri-OP"></div>
                         <div class="tombol-kanan-OP"></div>
-                    </div>
-                    <div class="area-content-card-OP">
+                    </div> --}}
+                    <swiper-container class="area-content-card-OP" loop="true" autoplay-delay="2500"
+                        autoplay-disable-on-interaction="false"
+                        breakpoints='{
+                        "480": { "slidesPerView": 1 },
+                        "768": { "slidesPerView": 1 },
+                        "1024": { "slidesPerView": 3 },
+                        "1280": { "slidesPerView": 3 },
+                        "2560": { "slidesPerView" : 3}
+                    }'
+                    space-between="20">
                         @foreach ($all_podcast as $allpodcastList)
-                            <div class="card-podcast" data-slug="{{ $allpodcastList->slug }}">
+                            <swiper-slide class="card-podcast" data-slug="{{ $allpodcastList->slug }}">
                                 <div class="card-body-podcast">
+
+                                    <div class="card-image-podcast">
+                                        <img src="./storage/{{ $allpodcastList->image_podcast }}" alt=""
+                                            class="image-podcast">
+                                    </div>
                                     <div class="head-body-podcast">
                                         <div class="genre">
                                             @if (is_array($allpodcastList->genre_podcast))
@@ -149,12 +170,8 @@
                                             <h1 class="card-text-podcast">{{ $allpodcastList->judul_podcast }}</h1>
                                         </div>
                                     </div>
-                                    <div class="card-image-podcast">
-                                        <img src="./storage/{{ $allpodcastList->image_podcast }}" alt=""
-                                            class="image-podcast">
-                                    </div>
                                 </div>
-                                <div class="card-header-podcast">
+                                {{-- <div class="card-header-podcast">
                                     <div class="author-podcast">
                                     </div>
                                     <a class="link-podcast" href="/detail-podcast/{{ $allpodcastList->slug }}">
@@ -162,10 +179,10 @@
                                             <p class="text-watch-podcast">View Podcast</p>
                                         </div>
                                     </a>
-                                </div>
-                            </div>
+                                </div> --}}
+                            </swiper-slide>
                         @endforeach
-                    </div>
+                    </swiper-container>
                 </div>
             </div>
         </div>
@@ -286,6 +303,7 @@
     </section>
     <script src="{{ asset('js/detailPodcast.js?v=' . time()) }}"></script>
     <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             // Pilih semua elemen dengan class "card-podcast"

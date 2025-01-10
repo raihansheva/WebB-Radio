@@ -292,7 +292,7 @@ class HomeController extends Controller
 
     public function detailEvent($slug)
     {
-        // $info = Info::where('slug', $slug)->first();
+        // $topInfo = Info::all();
         $kategoriInfo = TagInfo::where('is_visible', true)->with('info')->get();
         // dd($info->tag_info);
         $topInfo = Info::where(function ($query) {
@@ -411,7 +411,7 @@ class HomeController extends Controller
     {
         // Cari podcast berdasarkan slug
         $detailpodcast = Podcast::where('slug', $slug)->firstOrFail();
-
+        // dd($detailpodcast);
         $idPodcast = $detailpodcast->id;
 
         $epsgroup = Podcast::where('podcast_id', $idPodcast)->skip(1)->take(10)->get();
