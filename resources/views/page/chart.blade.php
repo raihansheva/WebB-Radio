@@ -5,7 +5,7 @@
     <section class="page-chart-1">
         <div class="area-chart">
             <div class="header-chart">
-                <h2 class="title-chart">Ardan Chart</h2>
+                <h2 class="title-chart">B-Radio Chart</h2>
             </div>
             <div class="content-chart">
                 <div class="area-top-chart">
@@ -56,25 +56,12 @@
     <section class="page-chart-2">
         <div class="area-streaming-news">
             <div class="area-content-SN">
-                <div class="area-content-SN-kiri">
-                    <div class="header-SN-kiri">
-                        <h2 class="title-SN-kiri">Streaming</h2>
-                    </div>
-                    <div class="content-SN-kiri">
-                        <div class="box-streaming">
-                            <img class="image-streaming" src="./storage/{{ $streamAudio->image_stream }}">
-                            <div class="btn-play-streaming" id="BtnStream" data-audio-src="{{ $streamAudio->stream_url }}">
-                                <span class="material-symbols-rounded">play_arrow</span>
-                            </div>
-                            {{-- <audio class="audio-streaming" id="audio-streaming" preload="auto">
-                                <source type="audio/mpeg" src="{{ $stream->stream_audio_url }}" />
-                            </audio> --}}
-                        </div>
-                    </div>
-                </div>
                 <div class="area-content-SN-kanan">
                     <div class="header-news">
                         <h1 class="title-news">Top Info</h1>
+                        <a class="link-more-news" href="/info-news">
+                            <span class="more-news">More Info <i class='bx bx-right-arrow-alt'></i></span>
+                        </a>
                     </div>
                     <div class="content-news">
                         @foreach ($top_info as $topInfoList)
@@ -108,6 +95,24 @@
                         @endforeach
                     </div>
                 </div>
+                <div class="line-SN"></div>
+                <div class="area-content-SN-kiri">
+                    <div class="header-SN-kiri">
+                        <h2 class="title-SN-kiri">Streaming</h2>
+                    </div>
+                    <div class="content-SN-kiri">
+                        <div class="box-streaming">
+                            <img class="image-streaming" src="./storage/{{ $streamAudio->image_stream }}">
+                            <div class="btn-play-streaming" id="BtnStream" data-audio-src="{{ $streamAudio->stream_url }}">
+                                <span class="material-symbols-rounded">play_arrow</span>
+                            </div>
+                            {{-- <audio class="audio-streaming" id="audio-streaming" preload="auto">
+                                <source type="audio/mpeg" src="{{ $stream->stream_audio_url }}" />
+                            </audio> --}}
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
